@@ -1,0 +1,33 @@
+  #region random create user reg
+        [HttpGet("[action]")]
+        public bool createmanysejam()
+        {
+
+            for (int a = 0; a <= 150; a++)
+            {
+                Random r = new Random();
+                string nationalcode = r.Next(1000000000, 2000000000).ToString();
+                string mobile = r.Next(1000000000, 2000000000).ToString();
+                string name = r.Next(1000, 20000).ToString();
+                string family = r.Next(2000, 4000).ToString();
+                string s = "{\"data\":{\"mobile\":" + mobile + ",\"email\":null,\"uniqueIdentifier\":\"" + nationalcode + "\",\"type\":\"IranianPrivatePerson\",\"status\":\"Sejami\",\"privatePerson\":{\"firstName\":\"name" + name + "\",\"lastName\":\"family" + family + "\",\"fatherName\":\"mohammad\",\"gender\":\"Male\",\"seriShChar\":\"ر\",\"seriSh\":\"14\",\"serial\":\"124170\",\"shNumber\":\"" + nationalcode + "\",\"birthDate\":\"1995-06-30T00:00:00\",\"placeOfIssue\":\"رازجرگلان\",\"placeOfBirth\":\"رازجرگلان\",\"signatureFile\":null,\"profileId\":0,\"bornCountryId\":0,\"evidenceCountryId\":0,\"evidenceType\":null,\"evidenceExpirationDate\":\"0001-01-01T00:00:00\",\"evidenceNumber\":null,\"passportNumber\":null,\"citizenCountryId\":0,\"specialNumber\":null,\"licenseNumber\":null,\"licenseIssueDate\":\"0001-01-01T00:00:00\",\"licenseExpirationDate\":\"0001-01-01T00:00:00\",\"imageId\":0,\"imageFile\":null,\"signatureFileId\":0,\"description\":null,\"locked\":false,\"isConfirmed\":false,\"id\":0,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"legalPerson\":null,\"addresses\":[{\"profileId\":0,\"postalCode\":\"9438181869\",\"countryId\":0,\"provinceId\":0,\"cityId\":0,\"city\":{\"name\":\"راز و جرگلان\",\"provinceId\":0,\"prefix\":null,\"sections\":null,\"addresses\":null,\"authenticationOfficeses\":null,\"id\":2302,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"sectionId\":0,\"section\":{\"name\":\"غلامان\",\"cityId\":0,\"addresses\":null,\"id\":2955,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"cityPrefix\":\"058\",\"remnantAddress\":\"سوخسو انقلاب\",\"alley\":\"چهار راه مسجد\",\"plaque\":\"25\",\"tel\":\"32593688\",\"countryPrefix\":\"0098\",\"mobile\":\"9035443992\",\"emergencyTel\":\"32593669\",\"emergencyTelCityPrefix\":\"058\",\"emergencyTelCountryPrefix\":null,\"faxPrefix\":null,\"fax\":null,\"website\":null,\"email\":\"Saghakanani@gmail.com\",\"isConfirmPostalCode\":false,\"profileOwner\":null,\"id\":0,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\",\"country\":{\"id\":1,\"name\":\"ایران\"},\"province\":{\"name\":\"خراسان شمالی\",\"countryId\":0,\"cities\":null,\"addresses\":null,\"authenticationOfficeses\":null,\"id\":155,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"}}],\"tradingCodes\":[{\"profileId\":0,\"type\":\"StockExchange\",\"firstPart\":\"ع دظ25692\",\"secondPart\":\"\",\"thirdPart\":\"\",\"locked\":false,\"isConfirmed\":false,\"id\":0,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\",\"code\":\"ع دظ25692\"}],\"agent\":null,\"accounts\":[{\"profileId\":0,\"accountNumber\":\"0347001097006\",\"type\":\"CurrentAccount\",\"sheba\":\"IR870170000000347001097006\",\"bankId\":0,\"bank\":{\"name\":\"بانک ملی ایران\",\"bic\":null,\"id\":127,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"branchCode\":\"8691\",\"branchName\":\"میدان شهید\",\"branchCityId\":0,\"branchCity\":{\"name\":\"بجنورد\",\"provinceId\":0,\"prefix\":null,\"sections\":null,\"addresses\":null,\"authenticationOfficeses\":null,\"id\":2173,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"isDefault\":true,\"locked\":false,\"isConfirmed\":false,\"id\":0,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"}],\"jobInfo\":{\"profileId\":0,\"jobId\":0,\"jobDescription\":null,\"employmentDate\":null,\"companyName\":null,\"companyAddress\":\"ندارم\",\"companyPostalCode\":\"9438181869\",\"companyEmail\":\"Saghakanani@gmail.com\",\"companyWebSite\":null,\"companyCityPrefix\":\"058\",\"companyPhone\":\"32593688\",\"position\":null,\"companyFaxPrefix\":null,\"companyFax\":null,\"job\":{\"title\":\"بیکار\",\"id\":109174,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"id\":0,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"financialInfo\":{\"profileId\":0,\"assetsValue\":500000000,\"inComingAverage\":1000000,\"sExchangeTransaction\":null,\"cExchangeTransaction\":null,\"outExchangeTransaction\":null,\"transactionLevel\":\"One\",\"tradingKnowledgeLevel\":\"VeryLow\",\"companyPurpose\":null,\"referenceRateCompany\":null,\"rateDate\":null,\"rate\":null,\"financialBrokers\":[],\"id\":0,\"isDeleted\":false,\"creationDate\":\"0001-01-01T00:00:00\",\"modifiedDate\":\"0001-01-01T00:00:00\"},\"legalPersonShareholders\":[],\"legalPersonStakeholders\":[]},\"meta\":null,\"error\":null}";
+
+                _userRegRepository.Add(new UserReg()
+                {
+                    CreatedBy = 123456,
+                    CreatedOn = DateTime.Now,
+                    Mobile = mobile,
+                    ModifiedBy = 123456,
+                    ModifiedOn = DateTime.Now,
+                    NationalCode = nationalcode,
+                    nationalID = "1234569874"
+,
+                    state = state.chapter5,
+                    UserProfile = s
+                });
+
+            }
+
+            return true;
+        }
+        #endregion
